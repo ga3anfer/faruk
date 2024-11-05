@@ -24,6 +24,10 @@
 body {
 	font-family: 'helvetica_ce_55_romanregular';
 }
+.bold-text {
+    font-weight: bold;
+}
+
 /*for-section-text-start-here*/
 ::selection {
  background: #e73131; /* WebKit/Blink Browsers */
@@ -584,7 +588,7 @@ ul.nav li.active a:before {
 #portfolio .portfolio-filter {
 	list-style: none;
 	padding: 0;
-	margin: 0 0 50px;
+	margin: 0 0 10px;
 	display: inline-block;
 }
 #portfolio .portfolio-filter > li {
@@ -1353,6 +1357,46 @@ font-weight:bolder;
 }
 .parallex-content h6{
 color:#fff;
+}
+/* .magazine-title{
+	width: 110px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    background-color: #d41e1e;
+    color: white;
+    justify-content: center;
+    border-radius: 10px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+} */
+  
+.magazine-container {
+	width: 100px;
+	height: 35px;
+	background-color: #d41e1e;
+	position: relative;
+	margin: 50px auto;
+	color: white;
+    border-radius: 10px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+  }
+  
+  /* Küçük üçgen oluşturan pseudo-element */
+  .magazine-container::after {
+	content: '';
+	position: absolute;
+	bottom: -5px; /* üçgenin div'in hemen altında görünmesi için */
+	left: 50%;
+	transform: translateX(-50%); /* üçgeni yatayda ortalar */
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	border-top: 5px solid #d41e1e; /* üçgenin rengi */
+  }  
+
+.magazine-text{
+	height: 35px; display:flex; align-items:center; justify-content:center;
 }
 
 /*Basic-Stylesheets-End-Here*/
